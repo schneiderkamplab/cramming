@@ -2,6 +2,8 @@
 
 import torch
 import hydra
+import aimrun
+import bitlinear
 
 import os
 import time
@@ -18,6 +20,9 @@ def main_training_process(cfg, setup):
     """This function controls the central training loop."""
     local_time = time.time()
     model = cramming.construct_model(cfg.arch, cfg.data.vocab_size)
+    if hasattr(cfg.train, "bitlinear") and cfg.train.bitlinear:
+        bitlinear.bitlinearize(model=model, replacements=cfg.train.bitlinear)
+        print(model)
     dataset, tokenizer = cramming.load_pretraining_corpus(cfg.data, cfg.impl)
     checkpoint_rendevous = os.path.join(cfg.base_dir, cfg.name, "intermediate_state.pth")
     if cfg.impl.resume_run_after_preempt and os.path.isfile(checkpoint_rendevous):
@@ -44,6 +49,8 @@ def main_training_process(cfg, setup):
     training_allowed, no_recovery_necessary = True, True
     loss_vals = []
 
+    if hasattr(cfg, "aim") and hasattr(cfg.aim, "experiment") and cfg.aim.experiment is not None:
+        aimrun.init(repo=cfg.aim.repo, experiment=cfg.aim.experiment, args=cfg)
     # Launch training
     for step, batch in enumerate(dataloader, initial_step + 1):
 
@@ -51,6 +58,7 @@ def main_training_process(cfg, setup):
         device_batch = model_engine.to_device(batch)
         loss = model_engine.step(device_batch)
         loss_vals.append(loss.detach())
+        aimrun.track({"train_loss": loss_vals[-1].item()})
 
         # Check stopping criteria
         if check_deadline(wallclock_timer, cfg.budget) or step == cfg.train.steps:
@@ -197,4 +205,8 @@ def launch(cfg):
 
 
 if __name__ == "__main__":
-    launch()
+    try:
+        launch()
+    except Exception as e:
+        aimrun.finish()
+        raise e
