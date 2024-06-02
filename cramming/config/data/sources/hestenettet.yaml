@@ -1,0 +1,11 @@
+# The hestenettet dataset, drawn from it huggingface mirror
+hestenettet:
+  provider: huggingface
+  name: mhenrichsen/hestenettet
+  split: train
+
+  streaming: False
+
+  # source-specific cleaning rules?
+  remove_columns:
+  concatenate_successive_entries: 16

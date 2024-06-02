@@ -1,0 +1,14 @@
+# The dbc dataset, drawn from local files
+dbc:
+  provider: local
+  name: dfm3.1
+  split: train
+  file_type: json
+  files:
+    - ../../../../../../odinllm/data/dbc/train.jsonl
+
+  streaming: True
+
+  # source-specific cleaning rules?
+  remove_columns:
+  concatenate_successive_entries: 16

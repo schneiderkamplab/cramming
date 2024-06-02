@@ -1,0 +1,111 @@
+# The dfm3.1 dataset, drawn from local files
+dfm3.1:
+  provider: local
+  name: dfm3.1
+  split: train
+  file_type: json
+  files:
+    - ../../../../../../nanoT5/data/dfm3.1-train-00.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-01.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-02.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-03.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-04.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-05.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-06.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-07.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-08.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-09.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-10.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-11.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-12.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-13.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-14.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-15.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-16.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-17.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-18.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-19.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-20.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-21.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-22.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-23.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-24.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-25.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-26.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-27.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-28.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-29.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-30.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-31.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-32.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-33.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-34.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-35.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-36.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-37.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-38.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-39.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-40.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-41.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-42.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-43.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-44.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-45.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-46.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-47.jsonl
+    - ../../../../../../nanoT5/data/dfm3.1-train-48.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-49.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-50.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-51.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-52.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-53.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-54.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-55.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-56.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-57.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-58.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-59.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-60.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-61.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-62.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-63.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-64.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-65.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-66.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-67.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-68.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-69.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-70.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-71.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-72.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-73.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-74.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-75.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-76.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-77.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-78.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-79.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-80.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-81.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-82.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-83.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-84.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-85.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-86.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-87.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-88.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-89.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-90.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-91.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-92.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-93.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-94.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-95.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-96.jsonl
+    # - ../../../../../../nanoT5/data/dfm3.1-train-97.jsonl
+
+  streaming: True
+
+  # source-specific cleaning rules?
+  remove_columns:
+  concatenate_successive_entries: 16
