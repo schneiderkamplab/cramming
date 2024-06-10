@@ -58,7 +58,12 @@ def main_training_process(cfg, setup):
         device_batch = model_engine.to_device(batch)
         loss = model_engine.step(device_batch)
         loss_vals.append(loss.detach())
-        aimrun.track({"train_loss": loss_vals[-1].item()})
+        aimrun.track({
+            "train_loss": loss_vals[-1].item(),
+            "batch_size": model_engine.current_batch_size,
+            "accumulation_steps": model_engine.accumulation_steps_expected,
+            "learning_rate": model_engine.optimizer.param_groups[0].get("lr", float("NaN")),
+        }, step=step)
 
         # Check stopping criteria
         if check_deadline(wallclock_timer, cfg.budget) or step == cfg.train.steps:

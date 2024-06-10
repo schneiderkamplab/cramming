@@ -5,7 +5,7 @@
 architectures:
   - ScriptableCrammedBERT
 
-num_transformer_layers: 32
+num_transformer_layers: 16
 hidden_size: 1536
 intermed_size: 6144
 hidden_dropout_prob: 0.1
@@ -35,7 +35,7 @@ embedding:
 attention:
   type: self-attention # also works with "pytorch"
   causal_attention: False
-  num_attention_heads: 24
+  num_attention_heads: 12
   dropout_prob: 0.1
   skip_output_projection: False
   qkv_bias: False
