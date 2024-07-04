@@ -117,6 +117,7 @@ def preprocess_dataset(cfg_data, download_path, num_threads=1, max_raw_chunk_siz
             hf_dataset_settings = {
                 k: v for k, v in details.items() if k in ["name", "partition", "split", "language", "date", "beam_runner"] and v is not None
             }
+            name = hf_dataset_settings.pop("name")
             raw_dataset = datasets.load_dataset(
                 name,
                 **hf_dataset_settings,
